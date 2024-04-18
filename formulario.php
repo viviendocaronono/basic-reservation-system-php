@@ -7,7 +7,6 @@
 </head>
 <body>
     <h1>Reserva tu turno</h1>
-
     <form action="guardar.php" method="post">
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre">
@@ -30,13 +29,10 @@
 
         <label for="contacto">Contacto</label>
         <input type="tel" name="telefono">
-
         <input type="submit" value="Reservar">
     </form>
     <br>
     <hr>
-    
-
     <a href="eliminar.php">Eliminar turno</a> 
     <br>
     <a href="modificar.php">Modificar turno</a>

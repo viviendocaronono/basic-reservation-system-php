@@ -10,8 +10,7 @@ $fecha = $_REQUEST["fecha"];
 $hora = $_REQUEST["hora"];
 
 //consulta de busqueda en el turno con la misma fecha y hora
-$SQL = "SELECT * FROM Turno 
-        WHERE fecha = '$fecha' AND hora = '$hora' ";
+$SQL = "SELECT * FROM Turno WHERE fecha = '$fecha' AND hora = '$hora' ";
 
 //ejecutar la consulta
 $res = $con->query( $SQL );
@@ -29,3 +28,4 @@ if( $res->num_rows > 0){
     $con->query( $SQL );
     
 }
+?>
